@@ -1,17 +1,51 @@
 {
-  "id": "cosmere-level-wizard",
-  "title": "Cosmere Level Wizard",
-  "description": "",
-  "version": "1.1.0",
-  "library": "false",
+  "id": "cosmere-character-generators",
+  "title": "Cosmere Character Generators",
+  "version": "0.5.0",
+  "url": "https://github.com/SirJerric/cosmere-character-generators",
+  "manifest": "https://github.com/SirJerric/cosmere-character-generators/releases/latest/download/module.json",
+  "download": "https://github.com/SirJerric/cosmere-character-generators/releases/download/0.5.0/module.zip",
+  "readme": "README.md",
   "compatibility": {
-    "minimum": 13,
-    "verified": 13
+    "minimum": "13",
+    "verified": "13.351"
   },
+  "description": "<p>A set of rollable tables and supporting drag-and-drop items that allow a player to quickly randomize and build a character. This module is dependent on the Stormlight Handbook premium module for drag-and-drop content.</p><p>In the current version, the resulting character will only lack the four assignable skill points, purpose, and obstacle to qualify as a complete Level One character for the Stormlight setting.</p>",
   "authors": [
     {
-      "name": "posadist-revolution",
-      "url": "https://github.com/posadist-revolution"
+      "name": "SirJerric",
+      "discord": "sirjerric",
+	  "url": "https://github.com/SirJerric",
+      "flags": {}
+    }
+  ],
+  "flags": {
+    "canUpload": true
+  },
+  "packs": [
+    {
+      "name": "cosmere-character-tables",
+      "label": "Cosmere Character Tables",
+      "path": "packs/cosmere-character-tables",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "cosmere-rpg",
+      "flags": {}
+    },
+    {
+      "name": "cosmere-character-items",
+      "label": "Cosmere Character Items",
+      "path": "packs/cosmere-character-items",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "cosmere-rpg",
+      "flags": {}
     }
   ],
   "relationships": {
@@ -21,27 +55,16 @@
         "type": "system",
         "manifest": "https://raw.githubusercontent.com/the-metalworks/cosmere-rpg/main/src/system.json",
         "compatibility": {
-          "verified": "2.0.3"
+          "verified": "2.0.4"
         }
       }
+    ],
+    "requires": [
+      {
+        "id": "cosmere-rpg-stormlight-handbook",
+        "type": "module",
+        "compatibility": {}
+      }
     ]
-  },
-  "esmodules": [
-    "index.js"
-  ],
-  "styles": [
-    "output.css"
-  ],
-  "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json"
-    }
-  ],
-  "url": "https://github.com/posadist-revolution/cosmere-level-wizard",
-  "manifest": "https://raw.githubusercontent.com/posadist-revolution/cosmere-level-wizard/refs/heads/main/src/module.json",
-  "download": "https://github.com/posadist-revolution/cosmere-level-wizard/releases/download/release-1.1.0/cosmere-level-wizard-release-1.1.0.zip",
-  "license": "LICENSE",
-  "readme": "README.md"
+  }
 }
