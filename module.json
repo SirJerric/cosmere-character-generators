@@ -2,8 +2,10 @@
   "id": "cosmere-character-generators",
   "title": "Cosmere Character Generators",
   "version": "0.5.0",
+  "url": "https://github.com/SirJerric/cosmere-character-generators",
   "manifest": "https://github.com/SirJerric/cosmere-character-generators/releases/latest/download/module.json",
   "download": "https://github.com/SirJerric/cosmere-character-generators/releases/download/0.5.0/module.zip",
+  "readme": "README.md",
   "compatibility": {
     "minimum": "13",
     "verified": "13.351"
@@ -13,6 +15,7 @@
     {
       "name": "SirJerric",
       "discord": "sirjerric",
+	  "url": "https://github.com/SirJerric",
       "flags": {}
     }
   ],
@@ -50,7 +53,10 @@
       {
         "id": "cosmere-rpg",
         "type": "system",
-        "compatibility": {}
+        "manifest": "https://raw.githubusercontent.com/the-metalworks/cosmere-rpg/main/src/system.json",
+        "compatibility": {
+          "verified": "2.0.4"
+        }
       }
     ],
     "requires": [
