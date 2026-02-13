@@ -1,0 +1,63 @@
+{
+  "id": "cosmere-character-generators",
+  "title": "Cosmere Character Generators",
+  "version": "0.5.0",
+  "manifest": "https://github.com/SirJerric/cosmere-character-generators/releases/latest/download/module.json",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.351"
+  },
+  "description": "<p>A set of rollable tables and supporting drag-and-drop items that allow a player to quickly randomize and build a character. This module is dependent on the Stormlight Handbook premium module for drag-and-drop content.</p><p>In the current version, the resulting character will only lack the four assignable skill points, purpose, and obstacle to qualify as a complete Level One character for the Stormlight setting.</p>",
+  "authors": [
+    {
+      "name": "SirJerric",
+      "discord": "sirjerric",
+      "flags": {}
+    }
+  ],
+  "flags": {
+    "canUpload": true
+  },
+  "packs": [
+    {
+      "name": "cosmere-character-tables",
+      "label": "Cosmere Character Tables",
+      "path": "packs/cosmere-character-tables",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "cosmere-rpg",
+      "flags": {}
+    },
+    {
+      "name": "cosmere-character-items",
+      "label": "Cosmere Character Items",
+      "path": "packs/cosmere-character-items",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "cosmere-rpg",
+      "flags": {}
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "cosmere-rpg",
+        "type": "system",
+        "compatibility": {}
+      }
+    ],
+    "requires": [
+      {
+        "id": "cosmere-rpg-stormlight-handbook",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  }
+}
